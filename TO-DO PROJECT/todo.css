@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+}
+.todo-conatinaer
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.todo-input
+{
+    border-radius: 0.5rem;
+    height: 30px;
+    width: 20rem;
+    
+}
+
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-time
+{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+
+.mylist
+{
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+li{
+    list-style-type: none;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.checkbtn
+{
+    margin-left: 30px;
+    /* color: white; */
+}
+
+.checkbtn:hover{
+    background-color: green;
+}
+
+.deletebtn
+{
+    margin-left: 30px;
+}
+
+.deletebtn:hover{
+    background-color: red;
+    
+}
+
+.todo-btn
+{
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    height: 30px;
+    width: 12rem;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.todo-btn:hover{
+    background-color: green;
+    
+}
+
+.clear-btn
+{
+    position: absolute;
+    left: 47%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.clear-btn:hover{
+    background-color: red;
+    color: white;
+}
