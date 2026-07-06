@@ -27,6 +27,9 @@ src/
 ### Explanation
 
 - Here we learn about, Dealing with the Complex Api, which is arranged in the form of array. Here each element of an array consist of API, Where API contains the Details for Each Pokemon Characters.
+ ```bash
+   "https://pokeapi.co/api/v2/pokemon?limit=1351"
+   ```
 - So, Our first step is, creating a component, and calling the API, inside the UseEffect Hooks, to deal with the sideEffects. 
 - We called the API inside the function using 'Fetch' Method, which we can use it either by using promises or by using async-await.  Fetch usually returns Promises(a promises is just like as a placeholder that returns the result of asynchronous behaviour, which may be either resolved or rejected).
 - Once we console the Api data for the first time, we get the bunch of arrays. Inside those arrays we have a another API, which we have to deal with.
@@ -34,7 +37,24 @@ src/
 - On console, we get all the Api data, which we need to furhter use, so to use , first we need to perform the Promise methods, like we know that Promises have methods like(promise.all- when all the promises are resolved then only execute), promise.allSettled(return all the promises data that is either resolved or rejected), or promise.race() - that returns the first promise value that is resoved). Here we use Promise.all() methods, and put the all bundled of array inside Promise.all().
 - Once it executed, it returns a Proper Array like Structure, which we can simply store it using useState state management, to get all the data.
 - Once we set the data, we can now get all the required data, and display it to User Interface using Map method.
+- We can also add Validateion, like Error Handling or Loading Effect , Which makes our Website Scalable.
   
+
+  ### Deployment
+  
+  
+- Once the Project is Completed, we need to Make our Development Code to Product level Code. To make our Project at Product Level, we need to Run the build Command using npm:
+ 
+- ```bash
+  npm run build
+  ```
+  
+- Once Build, We can now deploy it to either Paid Servers [like hostinger] or free servers like [Vercel or Netlify]
+- Deployed at Netlify Sever, click Below to Watch this Awesome Pokemon API Projects, to Get all the Information about Each Characters of Pokemon:
+  
+  ```bash
+  https://pokecharacters.netlify.app/
+  ```
 
 
 
