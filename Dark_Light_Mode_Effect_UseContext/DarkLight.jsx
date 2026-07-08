@@ -26,12 +26,12 @@ export const ThemeProvider = ({ children }) => {
 export const DarkLight = () => {
   const { theme, handleTheme } = useContext(ThemeContext); //DEFINING THE USECONTEXT HERE
   return (
-    <>
-      <h1>Dark Light Mode Website</h1>
-      <h4> Hello ! Vivek Chaurasiya... </h4>
-      <button onClick={handleTheme}>
+    <div className={ `flex flex-col gap-2 justify-center items-center h-screen w-screen      ${theme === "dark" ? "bg-black" : "bg-white"}`  }>
+      <h1 className= { `text-4xl uppercase     ${theme === "dark" ? "text-white": ""}  ` }>   Dark Light Mode Website </h1>
+      <h4 className= { `text-center text-gray-800 uppercase    ${theme === "dark" ? "text-white" : " " } `}> Hello ! Vivek Chaurasiya... </h4>
+      <button onClick={handleTheme} className={`border-2 p-2 flex justify-center item-center rounded-2xl cursor-pointer  ${theme === "dark" ? "text-white ": ""} `} >
         {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
       </button>
-    </>
+    </div>
   );
 };
